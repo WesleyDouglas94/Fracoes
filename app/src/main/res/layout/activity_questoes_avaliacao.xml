@@ -9,63 +9,69 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/primeiro_estagio"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-103dp"
+        tools:layout_editor_absoluteY="-139dp">
 
 
         <TextView
             android:id="@+id/pergunta2"
-            android:layout_width="314dp"
+            android:layout_width="272dp"
             android:layout_height="39dp"
             android:layout_marginTop="16dp"
             android:text="SOMA DE FRAÇÕES"
-            android:textSize="25dp"
+            android:textSize="20dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.216"
+            app:layout_constraintHorizontal_bias="0.115"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+
         <com.github.mikephil.charting.charts.PieChart
             android:id="@+id/grafico_pizza2"
-            android:layout_width="186dp"
-            android:layout_height="171dp"
-            android:layout_marginTop="248dp"
+            android:layout_width="331dp"
+            android:layout_height="238dp"
+            android:layout_marginTop="476dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.973"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <com.github.mikephil.charting.charts.PieChart
             android:id="@+id/grafico_pizza1"
-            android:layout_width="184dp"
-            android:layout_height="169dp"
-            android:layout_marginTop="248dp"
+            android:layout_width="331dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="172dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.029"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/Pergunta"
-            android:layout_width="368dp"
-            android:layout_height="91dp"
+            android:layout_width="376dp"
+            android:layout_height="54dp"
             android:layout_marginTop="100dp"
-            android:text="André recebeu seu salário e gastou 1/3 dele como aluguel e 1/5 com energia e água.\nQual a fração representa os gastos de andré??"
+            android:text="Maria comeu 2/4 de uma pizza e João comeu 1/4. Quanto de pizza os dois comeram?
+"
             android:textSize="17dp"
+            app:layout_constraintBottom_toTopOf="@+id/grafico_pizza1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintHorizontal_bias="0.542"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
         <Button
             android:id="@+id/btnProxima_etapa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="64dp"
             android:text="Proxima Etapa"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintHorizontal_bias="0.94"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.01" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
